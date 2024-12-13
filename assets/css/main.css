@@ -4383,9 +4383,9 @@ input, select, textarea {
 		}
 
 	#copyright {
-		color: #ffffff;
+		color: #00000000;
 		position: relative;
-		color: rgba(255, 255, 255, 0.25);
+		color: rgba(8, 8, 8, 0.25);
 		cursor: default;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 0.8rem;
@@ -4401,12 +4401,12 @@ input, select, textarea {
 	}
 
 		#copyright input, #copyright select, #copyright textarea {
-			color: #ffffff;
+			color: #00000000;
 		}
 
 		#copyright a {
-			color: #ffffff;
-			border-bottom-color: rgba(255, 255, 255, 0.5);
+			color: #00000000;
+			border-bottom-color: rgba(8, 8, 8, 0.5);
 		}
 
 			#copyright a:hover {
@@ -4415,24 +4415,24 @@ input, select, textarea {
 			}
 
 		#copyright strong, #copyright b {
-			color: #ffffff;
+			color: #00000000;
 		}
 
 		#copyright h1, #copyright h2, #copyright h3, #copyright h4, #copyright h5, #copyright h6 {
-			color: #ffffff;
+			color: #00000000;
 		}
 
 		#copyright blockquote {
-			border-left-color: #ffffff;
+			border-left-color: #00000000;
 		}
 
 		#copyright code {
 			background: rgba(255, 255, 255, 0.075);
-			border-color: #ffffff;
+			border-color: #00000000;
 		}
 
 		#copyright hr {
-			border-bottom-color: #ffffff;
+			border-bottom-color: #00000000;
 		}
 
 		#copyright a {
@@ -4686,4 +4686,6 @@ input, select, textarea {
 			visibility: visible;
 		}
 
-	}
+		section.split.contact ul.icons.alt {
+			text-align: left;
+		}}
