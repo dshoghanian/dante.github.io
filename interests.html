@@ -1,65 +1,126 @@
 <!DOCTYPE HTML>
-
 <html>
-	<head>
-		<title>My Interests - Dante's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		</style>
-	</head>
-	<body class="is-preload">
+  <head>
+    <title>My Interests - Dante's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+      #youtube-easter-egg {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        width: 80%;
+        height: 60%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: #000;
+      }
+      #youtube-easter-egg iframe {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body class="is-preload">
 
-		<!-- Wrapper -->
-		<div id="wrapper" class="fade-in">
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
 
-			<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="logo">Dante's Portfolio</a>
-			</header>
+      <!-- Header -->
+      <header id="header">
+        <a href="index.html" class="logo">Dante's Portfolio</a>
+      </header>
 
-			<!-- Nav -->
-			<nav id="nav">
-				<ul class="links">
-					<li><a href="index.html">Projects</a></li> <!-- Link back to Projects -->
-					<li><a href="/downloads/Dante_Shoghanian_Resume.pdf" target="_blank">Resume</a></li>
-					<li class="active"><a href="interests.html">Interests</a></li>
-					<li><a href="Certifications.html">Certifications</a></li>
-				</ul>
-				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/dshoghanian/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://github.com/dshoghanian" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-				</ul>
-			</nav>
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li><a href="index.html">Projects</a></li>
+          <li><a href="/downloads/Dante_Shoghanian_Resume.pdf" target="_blank">Resume</a></li>
+          <li class="active"><a href="interests.html">Interests</a></li>
+          <li><a href="Certifications.html">Certifications</a></li>
+        </ul>
+        <ul class="icons">
+          <li><a href="https://www.linkedin.com/in/dshoghanian/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+          <li><a href="https://github.com/dshoghanian" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+        </ul>
+      </nav>
 
-			<!-- Main Content -->
-			<div id="main">
-				<!-- Interests Section -->
-				<section>
-					<header class="major">
-						<h2>My Interests</h2>
-					</header>
-					<p>Here are a few things I'm passionate about, both in my career and personal life:</p>
-                    <ul>
-                        <li style="margin-bottom: 20px;"><strong>Machine Learning (ML):</strong> I'm genuinely fascinated by how machines can learn and make decisions on their own. Diving into algorithms and exploring how they can solve complex problems excites me. Whether it's developing predictive models or experimenting with neural networks, I love seeing how machine learning can drive innovation and make a real-world impact.</li>
-                
-                        <li style="margin-bottom: 20px;"><strong>Healthcare Analytics:</strong> I believe that data holds the key to transforming healthcare. I'm passionate about using analytics to enhance patient care, optimize hospital operations, and improve overall health outcomes. Working on projects that bridge technology and healthcare gives me a sense of purpose and the feeling that I'm contributing to something greater.</li>
-                
-                        <li style="margin-bottom: 20px;"><strong>Sports Analytics:</strong>
-                            <ul>
-                                <li><strong>Football (Soccer):</strong> As an avid follower of the Champions League, I find joy in analyzing match statistics and player performances. I love digging into the data to understand team strategies and what factors contribute to a win. It adds a whole new layer of appreciation to the game for me.</li>
-                                <li><strong>Formula 1 (F1):</strong> The blend of speed, technology, and strategy in F1 racing captivates me. I'm intrigued by how teams use data to influence everything from car performance to race tactics. Exploring telemetry data and seeing how split-second decisions can alter the outcome of a race is thrilling.</li>
-                                <li><strong>Tennis and Basketball:</strong> I enjoy delving into player stats and game analytics to understand what drives peak performance. Whether it's analyzing a tennis player's serve patterns or a basketball team's shot selection, I find that data adds depth to my enjoyment of these sports.</li>
-                            </ul>
-                        </li>
-                
-                        <li style="margin-bottom: 20px;"><strong>Finance:</strong> The dynamic nature of financial markets intrigues me. I'm interested in how data analytics can predict market trends, optimize investment portfolios, and manage financial risks. Studying financial models and seeing how data influences economic decisions is something I find both challenging and rewarding.</li>
-                    </ul>
-				</section>
-				<div id="copyright">
-					<ul>
-						<li>&copy; Dante Shoghanian</li>
-					</ul>
-				</div>
-			</div
+      <!-- Main Content -->
+      <div id="main">
+<!-- Interests Section -->
+<section>
+	<header class="major">
+		<h2>My Interests</h2>
+	</header>
+	<p>Here are a few things I'm passionate about, both in my career and personal life:</p>
+	<ul>
+		<li style="margin-bottom: 20px;"><strong>Machine Learning (ML):</strong> I'm genuinely fascinated by how machines can learn and make decisions on their own. Diving into algorithms and exploring how they can solve complex problems excites me. Whether it's developing predictive models or experimenting with neural networks, I love seeing how machine learning can drive innovation and make a real-world impact.</li>
+
+		<li style="margin-bottom: 20px;"><strong>Healthcare Analytics:</strong> I believe that data holds the key to transforming healthcare. I'm passionate about using analytics to enhance patient care, optimize hospital operations, and improve overall health outcomes. Working on projects that bridge technology and healthcare gives me a sense of purpose and the feeling that I'm contributing to something greater.</li>
+
+		<li style="margin-bottom: 20px;"><strong>Sports Analytics:</strong>
+			<ul>
+				<li><strong>Football (Soccer):</strong> As an avid follower of the Champions League, I find joy in analyzing match statistics and player performances. I love digging into the data to understand team strategies and what factors contribute to a win. It adds a whole new layer of appreciation to the game for me.</li>
+				<li><strong>Formula 1 (F1):</strong> The blend of speed, technology, and strategy in F1 racing captivates me. I'm intrigued by how teams use data to influence everything from car performance to race tactics. Exploring telemetry data and seeing how split-second decisions can alter the outcome of a race is thrilling.</li>
+				<li><strong>Tennis and Basketball:</strong> I enjoy delving into player stats and game analytics to understand what drives peak performance. Whether it's analyzing a tennis player's serve patterns or a basketball team's shot selection, I find that data adds depth to my enjoyment of these sports.</li>
+			</ul>
+		</li>
+
+		<li style="margin-bottom: 20px;"><strong>Finance:</strong> The dynamic nature of financial markets intrigues me. I'm interested in how data analytics can predict market trends, optimize investment portfolios, and manage financial risks. Studying financial models and seeing how data influences economic decisions is something I find both challenging and rewarding.</li>
+	</ul>
+</section>
+
+        <!-- Easter Egg Video Container -->
+        <div id="youtube-easter-egg">
+			<button id="close-easter-egg" style="position: absolute; top: 10px; right: 10px; background: red; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; font-size: 16px;">
+				✖
+			</button>
+			<iframe
+			  id="easter-egg-video"
+			  width="560"
+			  height="315"
+			  src="https://www.youtube.com/embed/Et9cKWWZ0LM?si=gDN4nuhFzOli4tlY"
+			  title="YouTube video player"
+			  frameborder="0"
+			  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			  referrerpolicy="strict-origin-when-cross-origin"
+			  allowfullscreen
+			></iframe>
+		  </div>
+		</div>
+
+		<script>
+		  // Easter Egg: Play a YouTube video on "Alt + A + S"
+		  document.addEventListener("keydown", (e) => {
+			if (e.altKey && e.key.toLowerCase() === "s") {
+			  const videoContainer = document.getElementById("youtube-easter-egg");
+			  const iframe = document.getElementById("easter-egg-video");
+			  videoContainer.style.display = "block";
+			  iframe.src="https://www.youtube.com/embed/Et9cKWWZ0LM?si=gDN4nuhFzOli4tlY"; // Autoplay and start at specified time
+			  setTimeout(() => {
+				videoContainer.style.display = "none";
+				iframe.src = ""; // Stop the video
+			  }, 20000); // Hide the video after 20 seconds
+			}
+		  });
+
+		  document.getElementById("close-easter-egg").addEventListener("click", () => {
+			const videoContainer = document.getElementById("youtube-easter-egg");
+			const iframe = document.getElementById("easter-egg-video");
+			videoContainer.style.display = "none";
+			iframe.src = ""; // Stop the video
+		});
+		</script>
+
+        <!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>&copy; Dante Shoghanian</li>
+			</ul>
+		</div>
+	</div>
+</html>
