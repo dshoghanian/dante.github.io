@@ -4689,3 +4689,8 @@ input, select, textarea {
 		section.split.contact ul.icons.alt {
 			text-align: left;
 		}}
+		#easter-egg img {
+			border: 5px solid #fff;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+			border-radius: 10px;
+		}

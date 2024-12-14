@@ -11,6 +11,35 @@
 			html {
 				scroll-behavior: smooth;
 			}
+
+			#easter-egg {
+				display: none;
+				text-align: center;
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				z-index: 1000;
+			}
+
+			#easter-egg img {
+				max-width: 90%;
+				max-height: 90%;
+				border: 5px solid #fff;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+				border-radius: 10px;
+			}
+
+			#close-easter-egg {
+				display: block;
+				margin: 10px auto;
+				padding: 10px 20px;
+				background: #ff5e57;
+				color: white;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -38,6 +67,8 @@
 					<li class="active"><a href="index.html">Projects</a></li>
 					<li><a href="/downloads/Dante_Shoghanian_Resume.pdf" target="_blank">Resume</a></li>
 					<li><a href="interests.html">Interests</a></li>
+					<li><a href="Certifications.html">Certifications</a></li>
+
 				</ul>
 				<ul class="icons">
 					<li><a href="https://www.linkedin.com/in/dshoghanian/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -114,13 +145,49 @@
 					</section>
 				</section>
 			</footer>
-		
-			<!-- Copyright -->
-			<div id="copyright">
-				<ul>
-					<li>&copy; Dante Shoghanian</li>
-				</ul>
+
+				<!-- Easter Egg -->
+				<div id="easter-egg">
+					<img src="images/liverpool.jpg" alt="Easter Egg" />
+					<button id="close-easter-egg">Close</button>
+				</div>
+
+				<!-- Copyright -->
+				<div id="copyright">
+					<ul>
+						<li>&copy; Dante Shoghanian</li>
+					</ul>
+				</div>
 			</div>
+
+			<!-- easteregg -->
+			<script>
+				document.addEventListener('keydown', (event) => {
+					const keysPressed = {};
+	
+					document.addEventListener('keydown', (event) => {
+						keysPressed[event.key.toLowerCase()] = true;
+	
+						// Check if Alt + A + S is pressed
+						if (keysPressed['alt'] && keysPressed['a'] && keysPressed['s']) {
+							const easterEgg = document.getElementById('easter-egg');
+							if (easterEgg.style.display === 'none') {
+								easterEgg.style.display = 'block';
+							} else {
+								easterEgg.style.display = 'none';
+							}
+						}
+					});
+	
+					document.addEventListener('keyup', (event) => {
+						keysPressed[event.key.toLowerCase()] = false;
+					});
+				});
+	
+				document.getElementById('close-easter-egg').addEventListener('click', () => {
+					document.getElementById('easter-egg').style.display = 'none';
+				});
+			</script>
 		</body>
 		</html>
 
@@ -132,6 +199,7 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		
 
 	</body>
 </html>
